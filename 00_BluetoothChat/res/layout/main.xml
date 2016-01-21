@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/secure_connect" />
+
+        <Button
+            android:id="@+id/button_remote_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Switch_To_Remote_Mode" />
+
+        <Button
+            android:id="@+id/button_normal_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Swtich_To_Normal_Mode" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button_set_pio11_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Set_Pio11_High" />
+
+        <Button
+            android:id="@+id/button_set_pio11_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Set_Pio11_Low" />
+
+        <Button
+            android:id="@+id/button_set_pio10_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Set_Pio10_High" />
+
+        <Button
+            android:id="@+id/button_set_pio10_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Set_Pio10_Low" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button_set_pio09_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Set_Pio09_High" />
+
+        <Button
+            android:id="@+id/button_set_pio09_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Set_Pio09_Low" />
+
+        <Button
+            android:id="@+id/button_set_pio02_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Set_Pio2_High" />
+
+        <Button
+            android:id="@+id/button_set_pio02_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Set_Pio2_Low" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/editTextSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/send" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" >
+    </ListView>
+
+</LinearLayout>
